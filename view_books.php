@@ -40,7 +40,7 @@ if(!isset($_SESSION["ID"]))
 					
 					<?php
 					echo "<h3 class='text-center'>Details Des Livres</h3>";
-					 $sql="SELECT * FROM Livres";
+					 $sql="SELECT * FROM livres";
 					 $res=$db->query($sql);
 					 if($res->num_rows>0)
 					 {

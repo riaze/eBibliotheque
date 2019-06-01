@@ -57,7 +57,8 @@ include "data_base.php";
 									 	$row=$res->fetch_assoc();	 // tranfer sqltable data from $res to $row
 									    
 									    // AID tranfer to ID and it will pass to ahome page
-									    $_SESSION ["ID"]=$row ["AID"]; 
+											$_SESSION ["ID"]=$row ["AID"]; 
+											echo 'riaze';
 									 	header ("location:ahome.php");
 										}
 									 
