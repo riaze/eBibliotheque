@@ -43,7 +43,6 @@ if(!isset($_SESSION["ID"]))
 					echo "<h3 class='text-center'>Les Commentaires	</h3>";
 					$sql="SELECT livres.LNOM, membres.NOM,membres.PRENOM,commentaires.CID,commentaires.COMM,commentaires.LOGS FROM commentaires inner JOIN livres ON livres.LID=commentaires.LID INNER JOIN membres ON commentaires.MID=membres.MID";	
 					 $res=$db->query($sql);
-					 var_dump($res);
 					 if($res->num_rows<=0)
 					 {
 					 	echo "<table class='table table-striped '>
